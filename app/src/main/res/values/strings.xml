@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Paralimpicos2019v20</string>
+    <string name="large_text"></string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_derecha">Preguntas frecuentes</string>
+    <string name="textoFaq">
+        ¿Qué son los juegos Paralímpicos Antofagasta? \n Es una gran fiesta deportiva, de carácter recreativo cuyo principal objetivo es acercar a las personas con discapacidad a la práctica deportiva.
+        \n \n
+        ¿Quién lo organiza? \n
+        La oficina para la inclusión de personas con discapacidad (OID) de la Ilustre Municipalidad de Antofagastab\n\n
+        ¿Desde hace cuánto tiempo se realizan?\n
+        El año 2014 se dió vida a la 1° versión de los juegos Paralímpicos Antofagasta, desde ahí en adelante se han
+        realizado las diferentes versiones, este 2019  tendremos la 5° versión. \n\n
+        ¿Qué disciplinas estarán en competencia?\n
+        Atletismo con pruebas de pista (60, 100 y 200 metros planos) y pruebas de campo (lanzamiento de bala y jabalina) Tenis de mesa, Boccia, Futbol, Goalball, Natación
+        \n\n
+        ¿Quiénes pueden participar?\n
+        Todas las personas en todo rango etario, que tengan algún tipo de discapacidad, independiente el tipo y grado de esta.
+        \n\n
+        Si no vivo en Antofagasta ¿Puedo participar?\n
+        Sí, están invitados todos los deportistas que quieran ser parte de esta fiesta deportiva
+        \n\n
+        ¿La organización financia pasajes? \n
+        No, no costos de traslados.
+        \n\n
+        ¿La organización financia alimentación?\n
+        Si, a cada deportista se le entrega almuerzo y colaciones los días de competencia.
+        \n\n
+        ¿Cómo me puedo inscribir?\n
+        A través de la ventana de inscripción que está disponible en www.municipalidadantofagasta.cl  en modalidad individual o grupal.
+        \n\n
+        ¿Cuándo serán?\n
+        28, 29, 30, 31 de agosto 2019
+        \n\n
+        ¿En qué horario serán las competencias?\n
+        Desde las 09:00 hasta las 16:00 hrs.
+        \n\n
+        ¿En qué lugar serán las competencias?\n
+        Las competencias se realizaran en:\n
+        •\tEstadio regional Calvo y Bascuñan  (Atletismo, Tenis de mesa, Boccia, Futbol)\n
+        •\tPiscina Olímpica (Natación)\n
+        •\tGimnasio 21 de mayo (Goalball)
+        \n\n
+        ¿Tiene algún costo la participación?\n
+        Nuestro evento es completamente gratuito
+        \n\n
+        ¿Hay que comprar entradas para ir a verlos?\n
+        No, nuestro evento es completamente gratuito
+        \n\n
+        ¿Que representa la llamita de los paralímpicos?\n
+        Es la mascota oficial de los Juegos Paralímpicos Antofagasta
+        \n\n
+        ¿Que representa cada color de las llamitas?\n
+        Representa a cada tipo de discapacidad:\n
+        •\tColor rojo: Discapacidad física\n
+        •\tColor amarillo: Discapacidad sensorial tipo visual\n
+        •\tColor naranjo: Discapacidad sensorial tipo auditivo\n
+        •\tColor verde: Discapacidad cognitivo\n
+        •\tColor morado: Discapacidad psíquico\n
+        •\tColor celeste: Trastorno social\n "</string>
+
+    <string name="Seleccione_ciudad">Seleccione ciudad</string>
+    <string name="Seleccione_institucion">Seleccione institución</string>
+    <string name="Seleccione_participante">Seleccione participante</string>
+
+</resources>

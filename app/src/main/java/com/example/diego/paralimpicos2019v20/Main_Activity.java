@@ -92,6 +92,8 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         finish();
     }
 
+
+
     /**
      * Metodo que ingresa a la busqueda manual
      * @param view
@@ -101,6 +103,19 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         startActivity(intent);
         finish();
     }
+
+
+
+    /**
+     * Metodo que ingresa a la actividad actividades/cronograma general
+     * @param view
+     */
+    public void eventoActividades(View view) {
+        Toast toast1 = Toast.makeText(getApplicationContext(),
+                        "Evento en espera", Toast.LENGTH_SHORT);
+        toast1.show();
+    }
+
 
 
     /**
@@ -113,6 +128,33 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         finish();
 
     }
+
+
+
+    /**
+     * Metodo que genera enlace a la actividad ranking
+     * @param view
+     */
+    public void eventoRanking(View view) {
+        Toast toast1 = Toast.makeText(getApplicationContext(),
+                "Evento en espera", Toast.LENGTH_SHORT);
+        toast1.show();
+    }
+
+
+
+    /**
+     * Metodo que genera enlace para ver las notificaciones
+     * @param view
+     */
+    public void eventoNotificaciones(View view) {
+        Toast toast1 = Toast.makeText(getApplicationContext(),
+                "Evento en espera", Toast.LENGTH_SHORT);
+        toast1.show();
+    }
+
+
+
     /**
      * Metodo que inicia el main_activity
      */
@@ -121,6 +163,8 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         startActivity(intent);
 
     }
+
+
 
     /**
      * Meotod que permite utilizar el boton back del propio celular para generar
@@ -253,6 +297,7 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
 
 
 
+    //////////////////////////
     @Override
     protected void onResume() {
         super.onResume();

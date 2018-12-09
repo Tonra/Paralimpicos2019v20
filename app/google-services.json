@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "852237487600",
+    "firebase_url": "https://paralimpicos-2019.firebaseio.com",
+    "project_id": "paralimpicos-2019",
+    "storage_bucket": "paralimpicos-2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852237487600:android:61c9bd031868a65c",
+        "android_client_info": {
+          "package_name": "com.example.diego.paralimpicos2019v20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852237487600-s8a1gudbqpjev3l3fpufnlmos4oci226.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diego.paralimpicos2019v20",
+            "certificate_hash": "b8b8188bcb75bb27d7d169d5f349ab4d3d03e15b"
+          }
+        },
+        {
+          "client_id": "852237487600-jacd113h3hb64esj94s9vr28n5dtmun6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLQXfMkgGaOFAp8sATJ8LNoroW_8i5U64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852237487600-jacd113h3hb64esj94s9vr28n5dtmun6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

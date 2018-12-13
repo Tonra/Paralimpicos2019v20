@@ -79,6 +79,9 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         if (id == R.id.action_settings) {
             return true;
         }
+        if (id == R.id.contactos) {
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -92,6 +95,16 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         finish();
     }
 
+
+    /**
+     * Evento que se encarga de mostrar los contactos disponibles por deporte
+     * @param item
+     */
+    public void eventoContacto(MenuItem item) {
+        Intent intent = new Intent (this, ContactoActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 
     /**
@@ -228,7 +241,7 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
     }
 
     /**
-     * Evento que
+     * Evento que se encarga de capturar el còdigo scaneado
      * @param result
      */
     @Override

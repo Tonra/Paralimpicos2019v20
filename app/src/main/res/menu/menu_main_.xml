@@ -8,4 +8,10 @@
         android:title="@string/btn_derecha"
         app:showAsAction="never"
         android:onClick="EventoFaq"/>
+    <item
+        android:id="@+id/contactos"
+        android:orderInCategory="100"
+        android:title="Contactos"
+        app:showAsAction="never"
+        android:onClick="eventoContacto"/>
 </menu>

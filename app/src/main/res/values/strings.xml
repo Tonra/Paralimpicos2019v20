@@ -59,6 +59,8 @@
         •\tColor morado: Discapacidad psíquico\n
         •\tColor celeste: Trastorno social\n "</string>
 
+    <string name="textoContacto">Contactos</string>
+
     <string name="Seleccione_ciudad">Seleccione ciudad</string>
     <string name="Seleccione_institucion">Seleccione institución</string>
     <string name="Seleccione_participante">Seleccione participante</string>

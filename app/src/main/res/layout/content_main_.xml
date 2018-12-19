@@ -13,7 +13,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+
+        >
 
         <RelativeLayout
             android:layout_marginTop="32dp"
@@ -28,10 +30,10 @@
                 android:textSize="25dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"/>
+                android:textStyle="italic|bold"/>
             <TextView
                 android:id="@+id/texto2"
-                android:textStyle="bold"
+                android:textStyle="bold|italic"
                 android:layout_below="@id/texto1"
                 android:text="de personas con discapacidad"
                 android:textColor="@color/colorPrimaryDark"
@@ -41,13 +43,14 @@
 
             <ImageView
 
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
                 android:layout_below="@+id/texto2"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:foregroundGravity="center"
-                app:srcCompat="@android:drawable/ic_secure" />
+                app:srcCompat="@android:drawable/ic_secure"
+                android:elevation="100dp" />
 
         </RelativeLayout>
 
@@ -81,7 +84,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        app:srcCompat="@android:drawable/ic_secure" />
+                        app:srcCompat="@drawable/icono_qr" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -111,7 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        app:srcCompat="@android:drawable/ic_secure"
+                        app:srcCompat="@drawable/icono_busqueda"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
                     <TextView
@@ -144,7 +147,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        app:srcCompat="@android:drawable/ic_secure"
+                        app:srcCompat="@drawable/icono_actividades"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
                     <TextView
@@ -176,7 +179,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        app:srcCompat="@android:drawable/ic_secure"
+                        app:srcCompat="@drawable/icono_charlas"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
                     <TextView
@@ -208,7 +211,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        app:srcCompat="@android:drawable/ic_secure"
+                        app:srcCompat="@drawable/icono_ranking"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
                     <TextView
@@ -240,7 +243,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        app:srcCompat="@android:drawable/ic_secure"
+                        app:srcCompat="@drawable/icono_notificaciones"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
                     <TextView

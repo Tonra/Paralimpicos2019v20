@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CharlaActivity">
+    tools:context=".CharlaActivity"
+
+    >
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+
+        >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar2"
@@ -22,8 +26,11 @@
 
 
         <ScrollView
+            android:background="@drawable/fondo_blanco"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"

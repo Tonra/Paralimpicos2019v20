@@ -9,7 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/fondo_blanco"
+        >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -28,6 +30,7 @@
             android:layout_marginTop="80dp"
             android:layout_gravity="center"
             android:prompt="@string/Seleccione_ciudad"
+            android:background="@color/blanco"
              />
 
         <Spinner
@@ -40,6 +43,7 @@
             android:layout_marginTop="50dp"
             android:layout_gravity="center"
             app:layout_constraintTop_toBottomOf="@+id/ciudad"
+            android:background="@color/blanco"
             />
 
         <Spinner
@@ -53,9 +57,11 @@
             android:layout_marginTop="50dp"
             android:layout_gravity="center"
             app:layout_constraintTop_toBottomOf="@+id/institucion"
+            android:background="@color/blanco"
              />
 
         <Button
+            android:onClick="eventoBuscar"
             android:id="@+id/btnBuscar"
             android:layout_width="300dp"
             android:layout_height="60dp"

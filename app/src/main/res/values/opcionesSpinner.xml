@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="spinner_ciudades">
+        <item>Seleccione una ciudad</item>
+        <item>Ciudad A</item>
+        <item>Ciudad B</item>
+        <item>Ciudad C</item>
+        <item>Ciudad D</item>
+    </string-array>
 
-    <string-array name="spinner_test">
-        <item>test 1</item>
-        <item>test 2</item>
-        <item>test 3</item>
-        <item>test 4</item>
-        <item>test 5</item>
+    <string-array name="spinner_institución">
+        <item>Seleccione una institución</item>
+        <item>Institucion A</item>
+        <item>Institucion B</item>
+        <item>Institucion D</item>
+        <item>Institucion E</item>
+    </string-array>
 
+    <string-array name="spinner_participante">
+        <item>Seleccione un participante</item>
+        <item>Participante A</item>
+        <item>Participante B</item>
+        <item>Participante C</item>
+        <item>Participante D</item>
     </string-array>
 </resources>

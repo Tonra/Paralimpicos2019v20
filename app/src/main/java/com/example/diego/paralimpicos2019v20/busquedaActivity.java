@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class busquedaActivity extends AppCompatActivity {
 
@@ -17,6 +18,10 @@ public class busquedaActivity extends AppCompatActivity {
     Spinner comboCiuidad;
     Spinner comboInstitucion;
     Spinner comboParticipante;
+
+    String buscarCiudad;
+    String buscarInstitucion;
+    String buscarParticipante;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,16 +34,16 @@ public class busquedaActivity extends AppCompatActivity {
         comboParticipante=(Spinner)findViewById(R.id.participante);
 
         //Carga de adapter en los spinner
-        ArrayAdapter<CharSequence> adapter =ArrayAdapter.createFromResource(this,R.array.spinner_test,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter =ArrayAdapter.createFromResource(this,R.array.spinner_ciudades,
+                R.layout.spinner_layout);
         comboCiuidad.setAdapter(adapter);
 
-        ArrayAdapter<CharSequence> adapter2 =ArrayAdapter.createFromResource(this,R.array.spinner_test,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter2 =ArrayAdapter.createFromResource(this,R.array.spinner_institucion,
+                R.layout.spinner_layout);
         comboInstitucion.setAdapter(adapter2);
 
-        ArrayAdapter<CharSequence> adapter3 =ArrayAdapter.createFromResource(this,R.array.spinner_test,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter3 =ArrayAdapter.createFromResource(this,R.array.spinner_participante,
+                R.layout.spinner_layout);
         comboParticipante.setAdapter(adapter3);
 
         /**
@@ -47,39 +52,53 @@ public class busquedaActivity extends AppCompatActivity {
         comboCiuidad.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+                    if(DataBase.consultaCiudad(comboCiuidad.getSelectedItem().toString())==true){
+                            buscarCiudad=comboCiuidad.getSelectedItem().toString();
+                    }else{
+                        buscarCiudad=comboCiuidad.getSelectedItem().toString();
+                    }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
+                buscarCiudad=comboCiuidad.getSelectedItem().toString();
             }
         });
 
+        //PARTE BUSCAR INSTITUCION
         comboInstitucion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
+                if(DataBase.consultarInstitucion(comboInstitucion.getSelectedItem().toString())==true){
+                    buscarInstitucion=comboInstitucion.getSelectedItem().toString();
+                }else{
+                    buscarInstitucion=comboCiuidad.getSelectedItem().toString();
+                }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
+                buscarInstitucion=comboCiuidad.getSelectedItem().toString();
             }
         });
 
+        //PARTE BUSCAR PARTICIPANTE
         comboParticipante.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+                if(DataBase.consultarParticipante(comboParticipante.getSelectedItem().toString())==true){
+                    buscarParticipante=comboParticipante.getSelectedItem().toString();
+                }else{
+                    buscarParticipante=comboParticipante.getSelectedItem().toString();
+                }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
+                buscarParticipante=comboParticipante.getSelectedItem().toString();
             }
         });
-
     }
 
 
@@ -112,4 +131,17 @@ public class busquedaActivity extends AppCompatActivity {
     public void eventoBack(View view) {
         eventoVolverMain();
     }
+
+    public void eventoBuscar(View view) {
+        if(DataBase.consultaCiudad(buscarCiudad)==false){
+            Toast toast1 = Toast.makeText(getApplicationContext(),"Ingrese una ciudad valida", Toast.LENGTH_SHORT);
+            toast1.show();
+        }else{
+            if (DataBase.consultarInstitucion(buscarInstitucion)==false){
+                Toast toast2 = Toast.makeText(getApplicationContext(),"Ingrese una institución valida", Toast.LENGTH_SHORT);
+                toast2.show();
+            }
+        }
+    }
+
 }

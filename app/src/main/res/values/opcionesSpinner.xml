@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="spinner_ciudades">
-        <item>Seleccione una ciudad</item>
+        <item>Seleccione una CIUDAD</item>
         <item>Ciudad A</item>
         <item>Ciudad B</item>
         <item>Ciudad C</item>
         <item>Ciudad D</item>
     </string-array>
 
-    <string-array name="spinner_institución">
-        <item>Seleccione una institución</item>
+    <string-array name="spinner_defecto_institucion">
+        <item>Seleccione una INSTITUCION</item>
+    </string-array>
+
+    <string-array name="spinner_institucion">
+        <item>Seleccione una INSTITUCION</item>
         <item>Institucion A</item>
         <item>Institucion B</item>
         <item>Institucion D</item>
         <item>Institucion E</item>
     </string-array>
 
+    <string-array name="spinner_defecto_participante">
+        <item>Seleccione un PARTICIPANTE</item>
+    </string-array>
+
     <string-array name="spinner_participante">
-        <item>Seleccione un participante</item>
+        <item>Seleccione un PARTICIPANTE</item>
         <item>Participante A</item>
         <item>Participante B</item>
         <item>Participante C</item>

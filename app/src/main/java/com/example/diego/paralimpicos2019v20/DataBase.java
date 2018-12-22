@@ -10,24 +10,24 @@ public DataBase(){
 
 
     public static boolean consultaCiudad(String ciudad){
-        if(ciudad.equalsIgnoreCase("Seleccione una ciudad")){
-            return false;
+        if(ciudad.equalsIgnoreCase("Seleccione una CIUDAD")){
+            return true;
         }
-        return true;
+        return false;
     }
 
     public static boolean consultarInstitucion(String institucion){
-        if(institucion.equalsIgnoreCase("Selecciona una institución")){
-            return false;
+        if(institucion.equalsIgnoreCase("Seleccione una INSTITUCION")){
+            return true;
         }
-        return true;
+        return false;
     }
 
     public static boolean consultarParticipante(String participante){
-        if(participante.equalsIgnoreCase("Selecciona un participante")){
-            return false;
+        if(participante.equalsIgnoreCase("Seleccione un PARTICIPANTE")){
+            return true;
         }
-        return true;
+        return false;
     }
 
 }

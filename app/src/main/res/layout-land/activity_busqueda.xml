@@ -6,33 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".busquedaActivity">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/fondo_blanco"
+        android:background="@drawable/fondo_monitosdelado"
         >
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />
 
 
         <Spinner
             android:id="@+id/ciudad"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="28dp"
             android:layout_gravity="center"
-            android:prompt="@string/Seleccione_ciudad"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
             android:background="@color/blanco"
-            />
+            android:prompt="@string/Seleccione_ciudad" />
 
         <Spinner
             android:id="@+id/institucion"
@@ -78,6 +71,9 @@
             app:layout_constraintTop_toBottomOf="@+id/participante"
             />
     </LinearLayout>
+
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="40dp"
@@ -95,5 +91,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/icono_back" />
+        app:srcCompat="@drawable/icono_back"
+        android:background="@drawable/btn_redondo"
+        />
 </android.support.constraint.ConstraintLayout>

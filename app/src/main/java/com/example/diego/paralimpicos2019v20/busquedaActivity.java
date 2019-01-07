@@ -19,6 +19,7 @@ public class busquedaActivity extends AppCompatActivity {
     Spinner comboInstitucion;
     Spinner comboParticipante;
 
+    //Variable para el uso de busqueda
     String buscarCiudad;
     String buscarInstitucion;
     String buscarParticipante;
@@ -136,10 +137,19 @@ public class busquedaActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode,event);
     }
 
+    /**
+     * Evento que llama a eventoVolverMain
+     * @param view
+     */
     public void eventoBack(View view) {
         eventoVolverMain();
     }
 
+
+    /**
+     * Evento que valida si es que se selecciono una ciudad/institucion o participante
+     * @param view
+     */
     public void eventoBuscar(View view) {
         if(DataBase.consultaCiudad(buscarCiudad)){
             Toast toast1 = Toast.makeText(getApplicationContext(),"Seleccione una ciudad correcta", Toast.LENGTH_SHORT);

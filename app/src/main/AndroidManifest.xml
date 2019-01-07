@@ -25,14 +25,21 @@
         <activity android:name=".FaqActivity" />
         <activity android:name=".busquedaActivity" />
         <activity android:name=".CharlaActivity" />
+        <activity android:name=".ContactoActivity" />
 
-        <activity android:name=".ContactoActivity"></activity>
-
-        <service android:name="Service.MiFirebaseIntanceIdService">
+        <service android:name="Service.MyMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <activity android:name=".NotificationActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

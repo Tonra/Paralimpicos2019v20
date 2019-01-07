@@ -1,10 +1,13 @@
 package com.example.diego.paralimpicos2019v20;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
@@ -18,6 +21,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
@@ -58,6 +64,25 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
                 requestPermissions(new String[]{android.Manifest.permission.CAMERA},123);
             }
         }
+
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+            NotificationChannel channel=new NotificationChannel("MyNotifications","MyNotifications",NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = getSystemService((NotificationManager.class));
+            manager.createNotificationChannel(channel);
+        }
+
+        FirebaseMessaging.getInstance().subscribeToTopic("general")
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        String msg = "";
+                        if (!task.isSuccessful()) {
+                            msg = "Error";
+                        }
+                       // Toast.makeText(Main_Activity.this, msg, Toast.LENGTH_SHORT).show();
+                    }
+                });
+
     }
 
 
@@ -161,9 +186,9 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
      * @param view
      */
     public void eventoNotificaciones(View view) {
-        Toast toast1 = Toast.makeText(getApplicationContext(),
-                "Evento en espera", Toast.LENGTH_SHORT);
-        toast1.show();
+        Intent intent = new Intent(this,NotificationActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 
@@ -174,6 +199,7 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
     public void mainBack(){
         Intent intent = new Intent(this,Main_Activity.class);
         startActivity(intent);
+        finish();
 
     }
 

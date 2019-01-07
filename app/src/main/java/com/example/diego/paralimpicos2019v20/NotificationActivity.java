@@ -31,6 +31,7 @@ public class NotificationActivity extends AppCompatActivity  {
         notiList =new ArrayList<>();
 
         int id=0;
+
         String titulo="titulo de prueba";
         String texto="texto de notificacion";
         Calendar calendario = Calendar.getInstance();
@@ -44,7 +45,7 @@ public class NotificationActivity extends AppCompatActivity  {
 
         adapter= new NotiListAdapter(getApplicationContext(),notiList);
         notificacion.setAdapter(adapter);
-
+        //ACA SE DEBEN LEER LOS MENSAJES EN LA BD Y CARGARLOS A LA LISTA
         notificacion.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -53,8 +54,6 @@ public class NotificationActivity extends AppCompatActivity  {
         });
 
     }
-
-
 
     /**
      * Evento que vuelte a la main activity

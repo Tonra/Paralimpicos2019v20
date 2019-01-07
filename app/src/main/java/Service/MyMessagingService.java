@@ -3,6 +3,7 @@ package Service;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
 
+import com.example.diego.paralimpicos2019v20.NotificationActivity;
 import com.example.diego.paralimpicos2019v20.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
@@ -23,6 +24,7 @@ public class MyMessagingService extends FirebaseMessagingService {
 
         NotificationManagerCompat manager = NotificationManagerCompat.from(this);
         manager.notify(999,builder.build());
+        //ACA SE DEBEN MANDAR LOS MENSAJES A LA BD
     }
 
 }

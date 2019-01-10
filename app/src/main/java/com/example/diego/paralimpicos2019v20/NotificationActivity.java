@@ -30,8 +30,8 @@ public class NotificationActivity extends AppCompatActivity  {
         notificacion=(ListView)findViewById(R.id.listaDeNoti);
         notiList =new ArrayList<>();
 
+        //DE ACA SE BORRA PARA CARGAR LOS DATOS EN LA BD
         int id=0;
-
         String titulo="titulo de prueba";
         String texto="texto de notificacion";
         Calendar calendario = Calendar.getInstance();
@@ -39,9 +39,9 @@ public class NotificationActivity extends AppCompatActivity  {
         int minuto=calendario.get(Calendar.MINUTE);
         int segundo=calendario.get(Calendar.SECOND);
         String horaFinal=hora+":"+minuto+":"+segundo;
+        //ACA SE CARGAN LOS DATOS A EL ARRAYLIST
 
         notiList.add(new Notification(id,titulo,texto,horaFinal));
-        //SE CARGAN A LA LISTA
 
         adapter= new NotiListAdapter(getApplicationContext(),notiList);
         notificacion.setAdapter(adapter);
@@ -52,7 +52,6 @@ public class NotificationActivity extends AppCompatActivity  {
                 Toast.makeText(getApplicationContext(),"" + view.getTag(),Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     /**

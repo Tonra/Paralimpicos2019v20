@@ -174,9 +174,9 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
      * @param view
      */
     public void eventoRanking(View view) {
-        Toast toast1 = Toast.makeText(getApplicationContext(),
-                "Evento en espera", Toast.LENGTH_SHORT);
-        toast1.show();
+        Intent intent = new Intent(this,RankingActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 

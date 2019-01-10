@@ -34,12 +34,11 @@
         </service>
 
         <activity android:name=".NotificationActivity">
-            <intent-filter >
-                <action android:name="android.intent.action.MAIN"/>
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".RankingActivity"></activity>
     </application>
 
 </manifest>

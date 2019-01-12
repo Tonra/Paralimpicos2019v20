@@ -2,25 +2,29 @@ package Service;
 
 public class Notification {
 
-    private int id;
-    private String titulo;
-    private String texto;
     private String hora;
+    private String id;
+    private String texto;
+    private String titulo;
 
-    public Notification(int id, String titulo, String texto, String hora) {
+
+    public Notification(String hora, String id, String texto, String titulo) {
         this.id = id;
         this.titulo = titulo;
         this.texto = texto;
         this.hora = hora;
     }
+    public Notification(){
+
+    }
 
 
     //SETTER AND GETTER
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

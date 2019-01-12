@@ -9,20 +9,25 @@ import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+
 import com.example.diego.paralimpicos2019v20.R;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.FirebaseInstanceIdService;
+
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 import java.util.Random;
 
 public class MiFirebaseIntanceIdService extends FirebaseMessagingService {
+
+
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
         showNotification(remoteMessage.getNotification().getTitle(),remoteMessage.
         getNotification().getBody());
+
+
+
     }
 
     private void showNotification(String title, String body) {
@@ -38,6 +43,7 @@ public class MiFirebaseIntanceIdService extends FirebaseMessagingService {
             notificationChannel.setVibrationPattern(new long[]{0,1000,500,1000});
             notificationChannel.enableLights(true);
             notificationManager.createNotificationChannel(notificationChannel);
+
         }
 
         NotificationCompat.Builder notificationBuilder= new NotificationCompat.Builder(this,NOTIFICATION_CHANNEL_ID);

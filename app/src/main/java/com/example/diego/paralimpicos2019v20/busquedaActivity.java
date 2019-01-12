@@ -1,8 +1,6 @@
 package com.example.diego.paralimpicos2019v20;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -11,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
+
 
 public class busquedaActivity extends AppCompatActivity {
 
@@ -23,6 +22,8 @@ public class busquedaActivity extends AppCompatActivity {
     String buscarCiudad;
     String buscarInstitucion;
     String buscarParticipante;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +109,7 @@ public class busquedaActivity extends AppCompatActivity {
 
             }
         });
+
     }
 
 
@@ -162,6 +164,8 @@ public class busquedaActivity extends AppCompatActivity {
                 if (DataBase.consultarParticipante(buscarParticipante)){
                     Toast toast1 = Toast.makeText(getApplicationContext(),"Seleccione un participante correcto", Toast.LENGTH_SHORT);
                     toast1.show();
+                }else{
+
                 }
             }
         }

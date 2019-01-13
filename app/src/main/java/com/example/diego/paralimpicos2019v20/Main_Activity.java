@@ -1,5 +1,7 @@
 package com.example.diego.paralimpicos2019v20;
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.DialogInterface;
@@ -37,9 +39,12 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
     //Variable tio int que permite saber si la camara esta en uso
     private int btnCam=0;
 
+    //variable para jugar con popup
+    Dialog myDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -49,8 +54,9 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Hola soy un virus, no mentira no hago nada", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(Main_Activity.this,Ayudapopup.class));
+                //Snackbar.make(view, "Hola soy un virus, no mentira no hago nada", Snackbar.LENGTH_LONG)
+                  //      .setAction("Action", null).show();
             }
         });
 

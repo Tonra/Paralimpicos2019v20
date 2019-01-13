@@ -17,6 +17,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Menu;
@@ -143,6 +144,10 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
      * @param view
      */
     public void eventoBusqueda(View view){
+        Toast toast1 = Toast.makeText(getApplicationContext(), "bandera 1", Toast.LENGTH_SHORT);
+        toast1.setGravity(Gravity.CENTER,0,0);
+        toast1.show();
+
         Intent intent = new Intent(this,busquedaActivity.class);
         startActivity(intent);
         finish();
@@ -155,9 +160,10 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
      * @param view
      */
     public void eventoActividades(View view) {
-        Toast toast1 = Toast.makeText(getApplicationContext(),
-                        "Evento en espera", Toast.LENGTH_SHORT);
-        toast1.show();
+        // Intent intent = new Intent (this,CalendarioActivity.class);
+        Intent intent = new Intent (this,CalendarioActivitytabbed.class);
+        startActivity(intent);
+        finish();
     }
 
 
@@ -171,7 +177,6 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         Intent intent = new Intent (this,CharlaActivitytabbed.class);
         startActivity(intent);
         finish();
-
     }
 
 

@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".FaqActivity" />
         <activity android:name=".busquedaActivity" />
+        <activity android:name=".CalendarioActivity"/>
         <activity android:name=".CharlaActivity" />
         <activity android:name=".ContactoActivity" />
 
@@ -39,6 +40,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".RankingActivity" />
+        <activity
+            android:name=".CalendarioActivitytabbed"
+            android:label="CalemdarioActivitytabbed"
+            android:theme="@style/AppTheme"></activity>
         <activity
             android:name=".CharlaActivitytabbed"
             android:label="@string/title_activity_charla_activitytabbed"

@@ -161,7 +161,8 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
      * @param view
      */
     public void eventoCharla(View view) {
-        Intent intent = new Intent (this,CharlaActivity.class);
+        //Intent intent = new Intent (this,CharlaActivity.class);
+        Intent intent = new Intent (this,CharlaActivitytabbed.class);
         startActivity(intent);
         finish();
 

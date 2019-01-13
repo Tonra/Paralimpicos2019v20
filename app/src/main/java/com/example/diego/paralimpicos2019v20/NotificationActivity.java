@@ -64,8 +64,8 @@ public class NotificationActivity extends AppCompatActivity  {
                              String id=noti.getId();
                              String texto=noti.getTexto();
                              String titulo=noti.getTitulo();
-                             notiList.add(new Notification(hora,id,titulo,texto));
-                             
+                             notiList.add(new Notification(hora,id,texto,titulo));
+
                             // llenarLista(hora,id,texto,titulo);
                              adapter= new NotiListAdapter(getApplicationContext(),notiList);
                              notificacion.setAdapter(adapter);

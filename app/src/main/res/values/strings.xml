@@ -65,4 +65,15 @@
     <string name="Seleccione_institucion">Seleccione institución</string>
     <string name="Seleccione_participante">Seleccione participante</string>
 
+    <string name="title_activity_charla_tabbed">charlaActivityTabbed</string>
+    <string name="section_format"></string>
+    <string name="title_activity_charla_activitytabbed">CharlaActivitytabbed</string>
+    <string name="tab_text_1">L</string>
+    <string name="tab_text_2">M</string>
+    <string name="tab_text_3">Mi</string>
+    <string name="tab_text_4">J</string>
+    <string name="tab_text_5">V</string>
+    <string name="tab_text_6">S</string>
+    <string name="tab_text_7">D</string>
+
 </resources>

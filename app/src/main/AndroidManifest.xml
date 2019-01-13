@@ -38,7 +38,11 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".RankingActivity"></activity>
+        <activity android:name=".RankingActivity" />
+        <activity
+            android:name=".CharlaActivitytabbed"
+            android:label="@string/title_activity_charla_activitytabbed"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

@@ -33,7 +33,7 @@
         android:layout_marginStart="176dp"
 
         android:layout_marginLeft="176dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="92dp"
 
         android:text="Nombre: "
         android:textColor="@color/colorPrimaryDark"
@@ -47,9 +47,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="92dp"
         android:text="Nombre charlista"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="12dp"
@@ -64,7 +64,7 @@
 
         android:layout_marginStart="176dp"
         android:layout_marginLeft="176dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Hora: "
         android:textColor="@color/colorPrimaryDark"
         android:textSize="12dp"
@@ -77,9 +77,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
         android:text="00:00"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="12dp"
@@ -95,7 +95,7 @@
 
         android:layout_marginStart="176dp"
         android:layout_marginLeft="176dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Lugar: "
         android:textColor="@color/colorPrimaryDark"
         android:textSize="12dp"
@@ -108,9 +108,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="Lugar de realización"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="12dp"
@@ -124,7 +124,7 @@
         android:layout_height="155dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:src="@android:drawable/ic_secure"
@@ -155,4 +155,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="eventoBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icono_back"
+        android:background="@drawable/btn_redondo"
+        />
 </android.support.constraint.ConstraintLayout>

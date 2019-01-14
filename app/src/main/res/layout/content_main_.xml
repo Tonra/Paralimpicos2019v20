@@ -9,60 +9,60 @@
     tools:showIn="@layout/activity_main_">
 
 
-
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
 
         >
 
         <RelativeLayout
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="15dp"
+            android:baselineAligned="false">
+
             <TextView
                 android:id="@+id/texto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Oficina para la Integración"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="italic|bold"/>
+                android:textStyle="italic|bold" />
+
             <TextView
                 android:id="@+id/texto2"
-                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/texto1"
-                android:text="de personas con discapacidad"
+                android:gravity="center"
+                android:text="de personas con Discapacidad"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold|italic" />
 
             <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texto2"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/icono_oid" />
 
-                android:layout_width="180dp"
-                android:layout_height="90dp"
-                android:layout_below="@+id/texto2"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:foregroundGravity="center"
-                app:srcCompat="@android:drawable/ic_secure"
-                android:elevation="100dp" />
 
         </RelativeLayout>
 
         <GridLayout
-            android:layout_marginTop="17dp"
-            android:columnCount="2"
-            android:rowCount="3"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            android:layout_marginTop="5dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
 
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
@@ -100,30 +100,32 @@
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 android:onClick="eventoBusqueda"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
-                        app:srcCompat="@drawable/icono_busqueda2"
                         android:layout_width="80dp"
-                        android:layout_height="80dp" />
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/icono_busqueda2" />
+
                     <TextView
 
-                        android:layout_marginTop="12dp"
-                        android:textSize="18dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Búsqueda"/>
+                        android:layout_marginTop="12dp"
+                        android:text="Búsqueda"
+                        android:textSize="18dp" />
 
 
                 </LinearLayout>
@@ -133,126 +135,137 @@
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 android:onClick="eventoActividades"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
-                        app:srcCompat="@drawable/icono_actividades"
                         android:layout_width="80dp"
-                        android:layout_height="80dp" />
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/icono_actividades" />
+
                     <TextView
 
-                        android:layout_marginTop="12dp"
-                        android:textSize="18dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Activ."/>
+                        android:layout_marginTop="12dp"
+                        android:text="Activ."
+                        android:textSize="18dp" />
 
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 android:onClick="eventoCharla"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
-                        app:srcCompat="@drawable/icono_charlas"
                         android:layout_width="80dp"
-                        android:layout_height="80dp" />
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/icono_charlas" />
+
                     <TextView
 
-                        android:layout_marginTop="12dp"
-                        android:textSize="18dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Charlas"/>
+                        android:layout_marginTop="12dp"
+                        android:text="Charlas"
+                        android:textSize="18dp" />
 
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 android:onClick="eventoRanking"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
-                        app:srcCompat="@drawable/icono_ranking"
                         android:layout_width="80dp"
-                        android:layout_height="80dp" />
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/icono_ranking" />
+
                     <TextView
 
-                        android:layout_marginTop="12dp"
-                        android:textSize="18dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rank."/>
+                        android:layout_marginTop="12dp"
+                        android:text="Rank."
+                        android:textSize="18dp" />
 
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 android:onClick="eventoNotificaciones"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
-                        app:srcCompat="@drawable/icono_notificaciones"
                         android:layout_width="80dp"
-                        android:layout_height="80dp" />
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/icono_notificaciones" />
+
                     <TextView
 
-                        android:layout_marginTop="12dp"
-                        android:textSize="18dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Not."/>
+                        android:layout_marginTop="12dp"
+                        android:text="Not."
+                        android:textSize="18dp" />
 
 
                 </LinearLayout>

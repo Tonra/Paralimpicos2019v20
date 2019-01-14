@@ -1,5 +1,6 @@
 package com.example.diego.paralimpicos2019v20;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -110,6 +111,7 @@ public class CharlaActivitytabbed extends AppCompatActivity {
             return fragment;
         }
 
+        @SuppressLint("StringFormatInvalid")
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {

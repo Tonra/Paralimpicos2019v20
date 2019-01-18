@@ -308,10 +308,8 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
             public void onClick(DialogInterface dialog, int which) {
                 btnCam=0;
                 scanner.stopCamera();
-                finish();
-                mainBack();
-                Toast toast1 = Toast.makeText(getApplicationContext(), "Evento a la espera", Toast.LENGTH_SHORT);
-                toast1.show();
+                irADescripcionParticipante();
+                //ACA TIENES QUE LLEGARTE EL RESULT.GETTEXT que es el id a descripcinoPArticipante y de ahi a la actividad
 
             }
 
@@ -335,6 +333,12 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
         }
     }
 
+    public void irADescripcionParticipante(){
+        Intent intent = new Intent(this, descripcionParticipante.class);
+        finish();
+        startActivity(intent);
+
+    }
 
     /**
      * ZXIng puede volver a scanear sin salir de la camara

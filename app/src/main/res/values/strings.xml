@@ -78,5 +78,17 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="icono_ayuda">**Para salir solo toque fuera del popup** \n\nEl menú de Paralímpicos 2019 consta de seis módulos: \n
+QR: \n
+Cada participante tendrá un código QR el cual podrá ser scanneado por \n nuestra aplicación y así obtener los datos de dicho participante.\n\n
+Búsqueda: En esta opción podemos buscar a los participantes manualmente\n\n
+seleccionando la ciudad, su institución y en base a estos datos se\n
+podrá obtener la lista de participantes. \n\n
+Actividades: En esta opción podemos ver todas las actividades a realizar en la semana de Paralímpicos 2019, incluso su hora y lugar!. \n\n
+Charlas: Como sabemos en esta semana se realizar charlas de importantes deportistas, en esta opción se tendrá día, hora y lugar. \n\n
+Ranking: En esta opción se mostrarán las tres instituciones con mas medallas!! \n\n
+Notificaciones: Paralímpicos 2019 puede recibir mensajes de sus usuarios, \n con datos importantes y relevantes, en esta opción tendrás acceso a ver\n los mensajes cuantas veces quieras.
+
+    </string>
 
 </resources>

@@ -144,9 +144,6 @@ public class Main_Activity extends AppCompatActivity implements ZXingScannerView
      * @param view
      */
     public void eventoBusqueda(View view){
-        Toast toast1 = Toast.makeText(getApplicationContext(), "bandera 1", Toast.LENGTH_SHORT);
-        toast1.setGravity(Gravity.CENTER,0,0);
-        toast1.show();
 
         Intent intent = new Intent(this,busquedaActivity.class);
         startActivity(intent);

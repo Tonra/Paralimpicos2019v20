@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactoActivity">
+    tools:context=".ContactoActivity"
+    android:background="@drawable/fondo_blanco"
+    >
 
 
     <ImageView
@@ -46,7 +48,9 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/textoContacto"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:text="Información de encargados a la espera."
                 android:gravity="center"
                 />
 

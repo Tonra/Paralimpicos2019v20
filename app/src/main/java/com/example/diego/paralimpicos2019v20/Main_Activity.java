@@ -31,6 +31,7 @@ import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
+
 public class Main_Activity extends AppCompatActivity implements ZXingScannerView.ResultHandler{
 
     //Variables para uso de la libreria ZXn

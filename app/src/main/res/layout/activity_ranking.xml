@@ -71,7 +71,7 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="176dp"
+        android:layout_width="142dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -93,7 +93,7 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="176dp"
+        android:layout_width="157dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -115,7 +115,7 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="176dp"
+        android:layout_width="168dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -138,7 +138,7 @@
 
     <TextView
         android:id="@+id/institucionPrimerLugar"
-        android:layout_width="176dp"
+        android:layout_width="144dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -147,16 +147,18 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text=" "
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/institucionSegundoLugar"
-        android:layout_width="176dp"
+        android:layout_width="132dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -165,16 +167,18 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text=" "
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        app:layout_constraintTop_toBottomOf="@+id/institucionPrimerLugar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/institucionTercerLugar"
-        android:layout_width="176dp"
+        android:layout_width="148dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -183,11 +187,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text=" "
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintTop_toBottomOf="@+id/institucionSegundoLugar"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

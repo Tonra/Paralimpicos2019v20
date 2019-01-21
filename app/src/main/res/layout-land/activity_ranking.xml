@@ -147,13 +147,18 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text=" "
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.086" />
 
     <TextView
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
         android:id="@+id/institucionSegundoLugar"
         android:layout_width="176dp"
         android:layout_height="27dp"
@@ -166,12 +171,14 @@
         android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintTop_toBottomOf="@+id/institucionPrimerLugar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
         android:id="@+id/institucionTercerLugar"
         android:layout_width="176dp"
         android:layout_height="27dp"
@@ -184,9 +191,9 @@
         android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
+        app:layout_constraintTop_toBottomOf="@+id/institucionSegundoLugar"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

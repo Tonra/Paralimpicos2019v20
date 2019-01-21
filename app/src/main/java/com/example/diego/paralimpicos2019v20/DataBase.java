@@ -30,4 +30,11 @@ public DataBase(){
         return false;
     }
 
+    public static boolean consultarLocacion(String locacion){
+        if(locacion.equalsIgnoreCase("Seleccione una LOCACION")){
+            return true;
+        }
+        return false;
+    }
+
 }

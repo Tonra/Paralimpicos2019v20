@@ -31,4 +31,14 @@
         <item>Participante C</item>
         <item>Participante D</item>
     </string-array>
+
+    //fragment_calendario_activitytabbed
+    <string-array name="spinner_locacion">
+        <item>Pista Atletica</item>
+        <item>Gimnasio</item>
+        <item>Piscina</item>
+        <item>Cancha 1</item>
+        <item>Cancha 2</item>
+        <item>Cancha 3</item>
+    </string-array>
 </resources>

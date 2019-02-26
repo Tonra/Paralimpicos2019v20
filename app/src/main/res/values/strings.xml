@@ -35,7 +35,7 @@
         ¿En qué horario serán las competencias?\n
         Desde las 09:00 hasta las 16:00 hrs.
         \n\n
-        ¿En qué locacion serán las competencias?\n
+        ¿En qué lugar serán las competencias?\n
         Las competencias se realizaran en:\n
         •\tEstadio regional Calvo y Bascuñan  (Atletismo, Tenis de mesa, Boccia, Futbol)\n
         •\tPiscina Olímpica (Natación)\n
@@ -64,9 +64,6 @@
     <string name="Seleccione_ciudad">Seleccione ciudad</string>
     <string name="Seleccione_institucion">Seleccione institución</string>
     <string name="Seleccione_participante">Seleccione participante</string>
-
-    //String para fragment calendario
-    <string name="Seleccione_locacion">Seleccione locacion</string>
 
     <string name="title_activity_charla_tabbed">charlaActivityTabbed</string>
     <string name="section_format"></string>
